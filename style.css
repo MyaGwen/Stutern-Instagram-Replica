@@ -18,16 +18,19 @@ body {
 }
 
 .main {
-    display: flex;
+    display: grid;
+
+    grid-template-columns: 244px 1fr;
     /* justify-content: space-between; */
     position: relative;
 }
 
 .main .left {
-    /* position: fixed; */
+    position: sticky;
     left: 0;
+    top: 0;
     /* overflow: hidden; */
-    width: 20%;
+    /* width: 20%; */
     height: 100vh;
     border-right: 1px solid var(--border);
     background: white;
@@ -243,6 +246,10 @@ body {
     height: 100%;
 }
 
+.square {
+    border-radius: 50%;
+}
+
 .info .user span {
     display: block;
     margin-bottom: 13px;
@@ -279,6 +286,16 @@ body {
     object-fit: cover;
 }
 
+.post-image {
+    background-color: black;
+}
+
+.post-image video {
+    width: 100%;
+    height: 586px;
+    object-fit: contain;
+}
+
 .icon {
     padding: 10px 10px 0 10px;
 
@@ -311,6 +328,11 @@ body {
 
 .caption span {
     margin-right: 10px;
+}
+
+.caption a {
+    text-decoration: none;
+    color: #00376b;
 }
 
 .view-comments,
