@@ -118,7 +118,7 @@ body {
 
 .center {
     display: grid;
-    grid-template-columns: 540px 357px;
+    grid-template-columns: 485px 334px;
     margin: auto;
     background-color: #fafafa;
 }
@@ -131,24 +131,24 @@ body {
 .status-section {
     position: relative;
     display: flex;
-    /* justify-content: space-between; */
+    justify-content: space-between;
     align-items: center;
     background-color: white;
     width: 100%;
-    height: 135px;
+    height: 120px;
     border: 1px solid var(--border);
     border-radius: 8px;
-    padding: 16px 0;
+    padding: 20px 0 13px;
     margin: 30px 0 0 0;
-    gap: 17px;
+
 }
 
 .circle-arrow {
     position: absolute;
-    right: -1px;
+    right: 0;
     top: 40px;
-    height: 25px;
-    width: 25px;
+    height: 22px;
+    width: 22px;
     border: 1px solid var(--border);
     border-radius: 50%;
     display: flex;
@@ -167,40 +167,39 @@ body {
     margin-left: 12px;
 }
 
-.profile {
+.linear {
     position: relative;
-    width: 70px;
-    height: 70px;
+    width: 63px;
+    height: 63px;
     background: linear-gradient(45deg, #ffe600, #ff0080 80%);
     display: flex;
     align-items: center;
     justify-content: center;
-    border-radius: 100%;
+    border-radius: 50%;
     /* overflow: hidden; */
 }
 
 
 
-.profile-pic {
+.bg-white {
     position: relative;
-    position: absolute;
+    /* position: absolute;
     margin: auto;
     top: 0;
     left: 0;
     right: 0;
-    bottom: 0;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+    bottom: 0; */
+    margin-inline: auto;
     background-color: white;
-    border-radius: 100%;
-    height: 65px;
-    width: 65px;
+    border-radius: 50%;
+    height: 59px;
+    width: 59px;
 }
 
 .status-section .status-card img {
-    width: 60px;
-    height: 60px;
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
     position: absolute;
     margin: auto;
     top: 0;
@@ -251,29 +250,22 @@ body {
     border-radius: 50%;
 }
 
-.info .user span {
-    display: block;
-    margin-bottom: 13px;
-    font-size: 12px;
-    color: var(--aside);
-}
-
 .name-audio {
-    height: 100%;
+    justify-content: flex-start;
 }
 
-
-
-.name-audio p,
-.name-audio span {
-    text-align: left;
-    /* padding: 0; */
-}
-
-.post-username {
+.post-username a {
+    text-decoration: none;
     color: var(--base);
+    font-size: 14px;
     font-weight: 600;
-    /* padding: 0; */
+}
+
+.audio {
+    /* display: block;
+    margin-bottom: 13px; */
+    font-size: 12px;
+    color: var(--base);
 }
 
 .info .options {
@@ -401,29 +393,36 @@ body {
     width: 30%;
 } */
 
+
+
 .right-profile-section {
     height: 66px;
-    width: 80%;
+    width: 100%;
     margin: auto;
-    margin: 16px 0 10px;
-
+    margin: 60px 0 0;
+    margin-inline: auto;
+    font-size: 14px;
+    position: relative;
 }
 
 .right-profile {
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    padding: 4px 16px 4px 0;
     width: 100%;
+    margin: auto;
 }
 
-.right-profile {
-    padding: 10px 10px 10px 0;
-}
+/* .profile-names {
+    /* align-items: center;
+    justify-content: center; 
 
-.top-profile {
-    margin-right: 10px;
-    align-items: center;
+} */
+
+.right-profile-pic {
+    height: 66px;
+    margin-right: 12px;
+    /* justify-content: flex-start; */
+    /* line-height: 18px; */
 }
 
 .right-profile img {
@@ -432,31 +431,41 @@ body {
 }
 
 .right-username {
+    justify-content: flex-start;
+}
+
+.right-username a {
+    text-decoration: none;
     color: var(--base);
     font-weight: 600;
-    line-height: 1px;
 }
 
 .right-name {
-    display: block;
     font-size: 14px;
     color: var(--aside);
-    margin-bottom: 15px;
+    /* margin-bottom: 15px; */
 }
 
 .right-profile-section button {
     color: #0095f6;
     font-weight: 600;
-    float: right;
+    position: absolute;
+    right: 0;
+}
+
+.center-B-part-B {
+    width: 100%;
+    margin-right: 160px;
 }
 
 .suggestions {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    /* justify-content: space-between; */
     width: 100%;
     margin: auto;
-    padding: 4px 16px;
+    padding: 4px;
+    position: relative;
 }
 
 .S-left {
@@ -465,7 +474,13 @@ body {
     justify-content: ;
 }
 
+.S-right {
+    position: absolute;
+    right: 0;
+}
+
 .S-right a {
+
     font-size: 14px;
     text-decoration: none;
     color: var(--base);
@@ -479,6 +494,7 @@ body {
     justify-content: space-between;
     align-items: center;
     margin-bottom: 10px;
+    padding: 4px;
 }
 
 .follow-section img {
